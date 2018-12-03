@@ -1,5 +1,5 @@
 function Micc(serverAddress) {
-    var miccServerBase = `http://${serverAddress}`;
+    var miccServerBase = (window.location.protocol)+`//${serverAddress}`;
     var miccSdkBase = `${miccServerBase}/miccsdk/api/v1`;
     var miccAuthBase = `${miccServerBase}/authorizationserver`;
     var bearerToken = '';
